@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitLabs | Q & A app</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>BitLabs</h1>
+    </header>
+    <main>
+        <section class="question-container">
+            <div class="question-wrapper">
+                <div class="q-number-indicator">
+                    <span class="current-question">0</span> / <span class="total-question">10</span>
+                </div>
+                <div>
+                    <p class="question-para">Pop Quiz :)</p>
+                    <p class="end-note">End</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="answer-container">
+            <div class="answer-wrapper">
+                <div class="start-btn">
+                    <button id="start-btn">Start</button>
+                </div>
+                <div class="scored">
+                    You scored 0
+                </div>
+                <a href="/resources.html" class="check-answers">
+                    <span href="">View the correct answers and other resources</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="#fff" viewBox="-20 -25 100 100">
+                        <path d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z"/>
+                    </svg>
+                </a>
+                <!-- Options -->
+                <div class="option">
+                    <div>
+                        <input type="radio" name="choice" id="a" class="answer">
+                        <label for="a" class="label" id="a-text">Java</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="choice" id="b" class="answer">
+                        <label for="b" class="label" id="b-text">C</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="choice" id="c" class="answer">
+                        <label for="c" class="label" id="c-text">Hypertext Markup Language</label>
+                    </div>
+                </div>
+                <div class="nav-container">
+                    <div>
+                        <button id="skip-btn">Skip</button>
+                    </div>
+                    <div>
+                        <button id="next-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Designed by <a href="#">JO</a> &copy; BitLabs</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
